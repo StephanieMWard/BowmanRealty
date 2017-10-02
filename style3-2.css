@@ -1,0 +1,360 @@
+/* CSS RESET */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ------------------------------------BEGIN CSS DOCUMENT */
+
+/*-------General*/
+p {
+	color: white;
+}
+body {
+	background-color: #272727;
+}
+
+
+
+/*----------HEADER & NAV */
+#header {
+	background-color: #191818;
+	position: relative;
+	height: 120px;
+}
+nav > ul {
+	padding-top: 30px;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #191818;
+}
+ul li {
+  display: block;
+  position: relative;
+  float: left;
+  background: #191818;
+}
+li ul { display: none; }
+ul li a {
+  display: block;
+  padding: 1em;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #fff;
+}
+ul li a:hover { background: #042b95; }
+li:hover > ul {
+  display: block;
+  position: absolute;
+}
+li:hover li { float: none; }
+li:hover a { background: #191818; }
+li:hover li a:hover { background: #042b95; }
+.main-navigation li ul li { border-top: 0; }
+ul ul ul {
+  left: 100%;
+  top: 0;
+}
+ul:before,
+ul:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+ul:after { clear: both; }
+#contactinfo {
+	position: absolute;
+	top: 15px;
+	right: 10px;
+}
+#contactinfo a {
+	text-decoration: none;
+	color: white;
+}
+#header p {
+	color: white;
+	line-height: 125%;
+	text-align: right;
+}
+
+/*-------------MAIN IMAGE (763x270)*/
+#mainimg2{
+	background: url(imgs/MainIMG.jpg) no-repeat center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 300px;
+}
+#mainimg {
+	position: relative;
+	width: 763px;
+	margin: auto;
+}
+
+/*#mainimg img{
+	position: relative;
+	z-index: -2;
+	display: block;
+}*/
+h3 {
+	color: white;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #000;
+	position: absolute;
+	z-index: 2;
+	top: 20px;
+	left: 465px;
+	font-style: bold;
+	font-weight: bold;
+	font-size: 2em;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h6 {
+	color: white;
+	position: absolute;
+	z-index: 2;
+	top: 70px;
+	left: 53%;
+	text-align: center;
+	font-style: italic;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#second {
+	color: white;
+	position: absolute;
+	z-index: 2;
+	top: 90px;
+	left: 57%;
+	text-align: center;
+	font-style: italic;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*-------------MAIN CONTENT */
+#maincontent2 {
+	background: url(imgs/homebg.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 556px;
+}
+#maincontent{
+	width: 763px;
+	position: relative;
+	margin: auto;
+}
+/*#maincontent img {
+	position: relative;
+	z-index: -2;
+	display: block;
+	margin: auto;
+}*/
+#time {
+	position: absolute;
+	z-index: 2;
+	top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 43%;
+	right: 0;
+}
+h1{
+	text-align: center;
+	color: black;
+	font-style: bold;
+	font-weight: bold;
+	font-size: 2.5em;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 10px;
+	position: absolute;
+	z-index: 2;
+	top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+h4{
+	text-align: center;
+	color: black;
+	font-style: italic;
+	font-size: 20px;
+	font-family: Arial, Helvetica, sans-serif;
+	position: absolute;
+	z-index: 2;
+	top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+}
+#buttons a{
+	text-decoration: none;
+	text-align: center;
+}
+table {
+	position: absolute;
+	z-index: 2;
+	top: 150px;
+/*	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;*/
+}
+.button1 {
+	width: 105px; /*150px*/
+	padding-top: 20px;
+/*	border: 3px solid black;*/
+}
+.blacktxt {
+	color: black;
+	padding-bottom: 10px;
+}
+.roundB {
+	width: 70px;
+	display: block;
+	border-radius: 90%;
+	margin: auto;
+}
+.button2 {
+/*	width: 636px;*/
+	height: 200px;
+	position: relative;
+}
+.LNU {
+	width: 400px;
+	display: block;
+	margin: auto;
+	padding-top: 50px;
+}
+.news {
+	color: black;
+   -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+   -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #042b95;
+   font-family: "Arial Black", Gadget, sans-serif;
+   font-size: 1.5em;
+   position: absolute;
+   z-index: 20;
+   top: 75px;
+   left: 70px;
+}
+article:first-child {
+	background-color: #042b95;
+	clear: both;
+	float: right;
+	padding: 10px;
+	width: 300px;
+	position: absolute;
+	top: 150px; /*450*/
+	right: 0;
+}
+article:nth-child(2) {
+	background-color: #201f1f;
+	padding: 10px;
+	width: 300px;
+	position: absolute;
+	top: 417px; /*268px difference between article 1 & 2*/
+	right: 0;
+}
+article p {
+	padding: 10px;
+	text-align: center;
+}
+article a {
+	text-decoration: underline;
+	color: white;
+}
+span.bold {
+	font-weight: bold;
+}
+
+
+/*--------------FOOTER */
+footer {
+	text-align: center;
+	padding: 15px;
+	background-color: white;
+	margin: auto;
+}
+footer ul {
+	margin: auto;
+	padding: 0;
+	width: 900px;
+	background: white;
+}
+footer li {
+	background: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
